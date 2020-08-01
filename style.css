@@ -1,3 +1,373 @@
+/* Nick Tsytovych*/
 body{
-  background-color: blue;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+*,
+*:before
+*:after{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  color: #0080ff;
+}
+hr{
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  margin: 40px 0;
+  background-color: #e5e5e5;
+}
+
+/*container*/
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*intro*/
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  background: url("img/intro.jpg") center no-repeat;
+  background-size: cover;
+}
+.intro__title{
+  color: #fff;
+  font-size: 110px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+.intro__title:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 60px auto;
+  background-color: #fff;
+}
+.intro__suptitle{
+  margin-bottom: 15px;
+  font-size: 72px;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+}
+.intro__inner{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+/*Header*/
+.header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 30px;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*Nav*/
+.nav{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.nav__link{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+
+  transition: color .2s linear;
+}
+.nav__link:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fce38a;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.nav__link:hover{
+  color:#fce38a;
+}
+.nav__link:hover:after {
+  display: block;
+}
+/*Button*/
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+
+  border: 2px solid #fff;
+  transition: background .1s linear, color .1s linear;
+}
+.btn__section{
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #333;
+  transition: background .1s linear, color .1s linear;
+}
+.btn__return{
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #333;
+  transition: background .1s linear, color .1s linear;
+}
+.btn:hover{
+  background-color: #fce38a;
+  color: #333;
+}
+/*Slider*/
+.slider{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.slider__items{
+  width: 23%;
+  padding: 20px 0;
+  position: relative;
+  border-top: 3px solid #fff;
+  opacity: .7;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.slider__items.active{
+opacity: 1;
+}
+.slider__items.active:before{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f38181;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 1;
+}
+.slider__num{
+  font-size: 24px;
+  font-weight: 700;
+}
+/*Section*/
+.section{
+  padding: 80px 0;
+}
+.section--devices{
+  background: url("img/webb1.jpg")center no-repeat;
+  background-size: cover;
+  color: #333333;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Kaushan Script', cursive;
+}
+.section__header{
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.section__subtitle{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: #f38181;
+}
+.section__title{
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+.section__title:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 40px auto;
+  background-color: #f38181;
+}
+.section__text{
+  font-size: 15px;
+  color: #999;
+}
+/*About*/
+.about{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__item{
+  width: 30%;
+}
+.img{
+  width: 380px;
+  height: 280px;
+}
+/*Statistics*/
+.statistics{
+  background-color: #95e1d3;
+}
+.stat{
+display: flex;
+}
+.stat__item{
+  flex: 1 1 0;
+  text-align: center;
+  padding: 70px 25px;
+  color: #fff;
+  border-left: 1px solid #fff;
+}
+.stat__item:last-child{
+  border-right: 1px solid #fff;
+}
+.stat__count{
+  margin-bottom: 10px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+}
+.stat__text{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/*Services*/
+.services{
+  display: flex;
+}
+.services__item{
+  flex: 1 1 0;
+  padding-left: 85px;
+  padding-right: 35px;
+  position: relative;
+}
+.services__icon{
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 27px;
+  z-index: 1;
+}
+.services__title{
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+}
+.services__text{
+  font-size: 15px;
+  color: #999;
+}
+.section__pic{
+  width: 550px;
+  height: 450px;
+}
+/*Works*/
+.works{
+  display: flex;
+}
+.works__col{
+  flex: 1 1 0;
+}
+.works__items{
+  position: relative;
+}
+.pic{
+  width: 375px;
+  height: 250px;
+}
+.pic1{
+  width: 375px;
+  height: 507px;
+}
+.text__info{
+  color: #fff;
+}
+.back{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("img/expo.jpg") center no-repeat;
+  background-size: cover;
+}
+/*Bio Page*/
+.bio__text{
+  padding-top: 16px;
+  font-size: 20px;
+  color: #fff;
+  background: #668c99;
+  opacity: 85%;
+  padding: 10px 15px;
+
+
+  line-height: 30px;
+  text-align: justify;
+}
+/* Exp Page*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td, th{
+  text-align: center;
+  color: #fff;
 }

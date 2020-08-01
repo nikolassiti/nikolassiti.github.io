@@ -1,21 +1,214 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  <!--Nick Tsytovych-->
+    <!--Nick Tsytovych-->
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Lakeside</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital@1&display=swap">
+    <title>Welcome</title>
   </head>
   <body>
-    <h1>Spring is Near! </h1>
-    <img src="go4.jpg" alt="">
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">My Bio</div>
+          <nav class="nav">
+            <a class="nav__link" href="index.html">Home</a>
+            <a class="nav__link" href="bio.html">My Story</a>
+            <a class="nav__link" href="exp.html">Experience</a>
+            <a class="nav__link" href="contact.html">Contacts</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <h2 class="intro__suptitle"></h2>
+            <h2 class="intro__suptitle">Great web desing without functionality</h2>
+              <h2 class="intro__suptitle">is like a sports car with no engine</h2>
+        </div>
+        <div class="slider">
+          <div class="slider__items active">
+            <span class="slider__num">01</span>
+              Home
+          </div>
+          <div class="slider__items">
+            <span class="slider__num">02</span>
+              My Story
+          </div>
+          <div class="slider__items">
+            <span class="slider__num">03</span>
+              Experience
+          </div>
+          <div class="slider__items">
+            <span class="slider__num">04</span>
+              Contacts
+          </div>
+        </div>
+      </div>
     </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h3 class="section__subtitle">About My Bio</h3>
+        <h2 class="section__title"></h2>
+        <div class="section__text">
+          <p>
+            Hello, my name is Nick. Computers were always my passion, but getting married at a young age and having to support my family
+            it was hard to balance hobby and a full time job. Read my full story bellow about how my hobby became my full time job and my
+            transformation from construction foreman to web designer.
+          </p>
+          <a class="btn__section" href="bio.html">My Story</a>
+        </div>
+      </div>
+      <div class="about">
+        <div class="about__item">
+          <div class="about__img">
+            <img class="img" src="img/1.jpg" alt="">
+          </div>
+        </div>
+        <div class="about__item">
+          <div class="about__img">
+            <img class="img" src="img/2.jpg" alt="">
+          </div>
+        </div>
+        <div class="about__item">
+          <div class="about__img">
+            <img class="img" src="img/3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="statistics">
+    <div class="container">
+      <div class="stat">
+        <div class="stat__item">
+          <div class="stat__count">777</div>
+          <div class="stat__text">Projects Completed</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__count">777</div>
+          <div class="stat__text">Happy Customers</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__count">777</div>
+          <div class="stat__text">Years of Experience</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__count">777</div>
+          <div class="stat__text">Trainings Completed</div>
+        </div>
+        <div class="stat__item">
+          <div class="stat__count">0</div>
+          <div class="stat__text">Negative Reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h3 class="section__subtitle">Curious about my skills?</h3>
+        <h2 class="section__title">See bellow...</h2>
+          <a class="btn__section" href="exp.html">Experience</a>
+      </div>
+      <div class="services">
+        <div class="services__item">
+          <img class="services__icon" src="icons/1.jpg" alt="">
+          <div class="services__title">Photographer</div>
+          <div class="services__text">Skills</div>
+        </div>
+        <div class="services__item">
+          <img class="services__icon" src="icons/2.jpg" alt="">
+          <div class="services__title">Multi-Lingual</div>
+          <div class="services__text">Representatives</div>
+        </div>
+        <div class="services__item">
+          <img class="services__icon" src="icons/3.jpg" alt="">
+          <div class="services__title">Great</div>
+          <div class="services__text">Customer Service</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="services">
+        <div class="services__item">
+          <img class="services__icon" src="icons/4.jpg" alt="">
+          <div class="services__title">Family Oriented</div>
+          <div class="services__text">Company</div>
+        </div>
+        <div class="services__item">
+          <img class="services__icon" src="icons/5.jpg" alt="">
+          <div class="services__title">Web Designer</div>
+          <div class="services__text">Specialists</div>
+        </div>
+        <div class="services__item">
+          <img class="services__icon" src="icons/6.jpg" alt="">
+          <div class="services__title">Programming</div>
+          <div class="services__text">Languages</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--devices">
+    <div class="container">
+      <div class="section__header">
+      </div>
+    </div>
+      <div class="container">
+        <h3 class="section__subtitle">One size fits all?</h3>
+        <h3 class="section__subtitle">Not anymore and not at My-Bio</h3>
+          <p class="my__bio">At My Bio,</p>
+          <p class="my__bio">
+            We listen to our clients' needs and preferences - we work together to provide a unique solution because happy customers is our top priority!
+          </p>
+          <a class="btn__section" href="contact.html">Contacts</a>
+      </div>
+  </section>
+  <hr>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h3 class="section__subtitle">Some Photos</h3>
+        <h2 class="section__title">About Coding </h2>
+      </div>
+    </div>
+    <div class="works">
+      <div class="works__col">
+        <div class="works__items">
+          <img class="pic" src="img/img/web2.jpeg" alt="">
+          <img class="pic" src="img/img/web1.jpeg" alt="">
+        </div>
+      </div>
+      <div class="works__col">
+        <div class="works__items">
+          <img class="pic" src="img/img/web1.jpg" alt="">
+          <img class="pic" src="img/img/web2.jpg" alt="">
+        </div>
+      </div>
+      <div class="works__col">
+        <div class="works__items">
+          <img class="pic1" src="img/img/web.jpg" alt="">
+        </div>
+      </div>
+      <div class="works__col">
+        <div class="works__items">
+          <img class="pic" src="img/img/web3.jpeg" alt="">
+          <img class="pic" src="img/img/web3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="section__header">
+      <h3 class="section__subtitle">Thank you for your time! </h3>
+      <h2 class="section__title">I Would Love to See You Again!</h2>
+      <a class="btn__return" href="index.html">Back to Top</a>
+    </div>
+  </section>
+  <footer>Criate By Nick</footer>
   </body>
 </html>
